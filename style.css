@@ -1,6 +1,37 @@
 * {
    font-family: 'Unbounded', cursive;
-   margin: 0.5%;
+   box-sizing: border-box;
+}
+
+
+header{
+   display: flex;
+   height: 15vh;
+   background: rgb(61, 209, 106);
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+header img{
+   height: 30%;
+}
+
+header p{
+   font-size: 2vw;
+}
+
+main{
+   background: rgb(209, 255, 223);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 81vh;
+}
+
+main *{
+   margin: 0.3% 0;
 }
 
 p {
@@ -8,18 +39,30 @@ p {
 }
 
 input{
+   border-radius: 10px;
+   border: 1px solid black;
    width: 350px;
+}
+
+button{
+   cursor: pointer;
 }
 
 button + p{
    font-size: 10px;
 }
 
-body{
-   height: 100vh;
-   width: 100vw;
+footer {
+   background: rgb(61, 209, 106);
+   color: black;
    display: flex;
-   flex-direction: column;
    justify-content: center;
    align-items: center;
+   height: 4vh;
+   box-sizing: border-box;
+}
+
+footer * {
+   margin: 0.2vw;
+   font-size: 15px;
 }
