@@ -18,11 +18,12 @@ header img{
 }
 
 header p{
-   font-size: 2vw;
+   font-size: 25px;
 }
 
 p:nth-child(3){
-   font-size: 1vw;
+   font-size: 15px;
+   text-align: center;
 }
 
 main{
@@ -39,7 +40,7 @@ main *{
 }
 
 p {
-   font-size: 30px;
+   font-size: 25px;
 }
 
 input{
@@ -69,10 +70,4 @@ footer {
 footer * {
    margin: 0.2vw;
    font-size: 15px;
-}
-
-@media screen and (max-width: 600){
-   p:nth-child(3){
-      font-size: 200px;
-   }
 }
