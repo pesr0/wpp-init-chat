@@ -43,9 +43,29 @@ p {
    font-size: 25px;
 }
 
-input{
+.list_items{
+   display: none;
+}
+
+.phone_input{
+   display: flex;
+}
+
+.phone_input input{
+   margin: 0 0.8%;
    border-radius: 10px;
    border: 1px solid black;
+}
+
+.dropdown_input{
+   width: 60px;
+}
+
+.dropdown_input:focus .list_items{
+   display: inline;
+}
+
+.phone_number{ 
    width: 350px;
 }
 
