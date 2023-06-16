@@ -43,10 +43,6 @@ p {
    font-size: 25px;
 }
 
-.list_items{
-   display: none;
-}
-
 .phone_input{
    display: flex;
 }
@@ -61,8 +57,22 @@ p {
    width: 60px;
 }
 
-.dropdown_input:focus .list_items{
-   display: inline;
+.list_items{
+   position: absolute;
+   display: none;
+   z-index: 1;
+   background: blue;
+   padding: 5px;
+   margin: 0;
+}
+
+.dropdown_input:hover + .list_items,
+.dropdown_input:focus + .list_items{
+   display: block;
+}
+
+.list_items:hover{
+   display: block;
 }
 
 .phone_number{ 
