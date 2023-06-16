@@ -17,6 +17,7 @@ function valuation(){
             return;
           }
     }
+    
     link=link.join('');
 
     localStorage.setItem('wppPhone', link);
