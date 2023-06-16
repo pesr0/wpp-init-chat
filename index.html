@@ -6,8 +6,11 @@
         <title>WhatsApp Chat Starter</title>
         <meta name="description" content="Start a chat in whatsapp without add number on contacts. Just type the WhatsApp number and chat.">
         <link rel="icon" href="assets/whatsapp.svg">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/page_font.css">
+        <link rel="stylesheet" href="styles/header_style.css">
+        <link rel="stylesheet" href="styles/footer_style.css">
+        <link rel="stylesheet" href="styles/main_style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap" rel="stylesheet">
@@ -25,10 +28,10 @@
 
                 <div class="phone_input">
                     <div class="dropdown">
-                        <input class="dropdown_input" placeholder="+XXX" readonly>
+                        <input class="dropdown_input" placeholder="+XX" readonly>
                         <ul class="list_items">
                             <li>+55 - Brasil</li>
-                            <li>+66 - Sei la</li>
+                            <li>+XX - None</li>
                         </ul>
                     </div>
                     
@@ -51,4 +54,5 @@
 
     <script src="scripts/number_valuation.js"></script>
     <script src="scripts/wpp_redirectioner.js"></script>
+    <script src="scripts/icc_selection.js"></script>
 </html>

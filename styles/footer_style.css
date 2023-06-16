@@ -1,0 +1,14 @@
+footer {
+    background: rgb(61, 209, 106);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    box-sizing: border-box;
+ }
+ 
+ footer * {
+    margin: 0.2vw;
+    font-size: 15px;
+ }

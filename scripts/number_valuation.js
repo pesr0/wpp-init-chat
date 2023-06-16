@@ -1,35 +1,39 @@
 //Function which will recieve the text digited in the phone number field and valuate it
 function valuation(){
-    let link = Array.from(document.querySelector('.phone_number').value);
-    let ddi = Array.from(document.querySelector('.dropdown_input').value);
+  let link = Array.from(document.querySelector('.phone_number').value);
+  let ddi = Array.from(document.querySelector('.dropdown_input').value);
 
-    let i=0;
+  if(link.length==0){
+    alert('the phone number field must not be empty');
+    return;
+  }
 
-    for(let k=0; k<link.length; k++){
-        if(k==0 && link[k]=='+'){
-            link.splice(k, 1);
-            k--;
-          } else if(link[k]=='-' || link[k]=='(' || link[k]==')' || link[k]==' '){
-            link.splice(k, 1);
-            k--;
-          } else if(isNaN(link[k])){ 
-            alert('only numbers in phone number');
-            return;
-          }
+  let i=0;
+  for(let k=0; k<link.length; k++){
+    if(k==0 && link[k]=='+'){
+      link.splice(k, 1);
+      k--;
+    } else if(link[k]=='-' || link[k]=='(' || link[k]==')' || link[k]==' '){
+      link.splice(k, 1);
+      k--;
+    } else if(isNaN(link[k])){ 
+      alert('only numbers in phone number');
+      return;
     }
+  }
     
-    link=link.join('');
+  link=link.join('');
 
-    localStorage.setItem('wppPhone', link);
+  localStorage.setItem('wppPhone', link);
     
-    console.log(link);
+  console.log(link);
 
-    redirect();
+  redirect();
 }
 
 function enterClick(event){
-    if(event.keyCode==13) valuation();
-    else return;
+  if(event.keyCode==13) valuation();
+  else return;
 }
 
 

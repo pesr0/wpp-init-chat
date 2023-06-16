@@ -1,0 +1,21 @@
+header{
+    display: flex;
+    height: 15vh;
+    background: rgb(61, 209, 106);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ header img{
+    height: 30%;
+ }
+ 
+ header p{
+    font-size: 25px;
+ }
+ 
+ p:nth-child(3){
+    font-size: 15px;
+    text-align: center;
+ }
