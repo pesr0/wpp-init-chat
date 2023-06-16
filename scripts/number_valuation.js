@@ -8,12 +8,14 @@ function valuation(){
     return;
   }
 
+  link = ddi.concat(link);
+
   let i=0;
   for(let k=0; k<link.length; k++){
     if(k==0 && link[k]=='+'){
       link.splice(k, 1);
       k--;
-    } else if(link[k]=='-' || link[k]=='(' || link[k]==')' || link[k]==' '){
+    } else if(link[k]=='-' || link[k]=='(' || link[k]==')' || link[k]==' ' || link[k] == '.' || link[k] == ','){
       link.splice(k, 1);
       k--;
     } else if(isNaN(link[k])){ 
@@ -23,9 +25,8 @@ function valuation(){
   }
     
   link=link.join('');
-
   localStorage.setItem('wppPhone', link);
-    
+  
   console.log(link);
 
   redirect();

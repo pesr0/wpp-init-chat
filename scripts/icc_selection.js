@@ -13,16 +13,14 @@ function icc_select(event){
         }
     }
 
-    drop_text = drop_text.join('');
+    drop_text = drop_text.join('');    
 
     if(drop_text=='+XX'){
         drop_input.value = '';
         return;
     }
-
+    
     drop_input.value = drop_text;
-    console.log(drop_text);
-
 }
 
 items.forEach(function(item){
