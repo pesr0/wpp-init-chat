@@ -9,7 +9,7 @@ function valuation(){
         if(k==0 && link[k]=='+'){
             link.splice(k, 1);
             k--;
-          } else if(link[k]=='-' || link[k]=='(' || link[k]==')'){
+          } else if(link[k]=='-' || link[k]=='(' || link[k]==')' || link[k]==' '){
             link.splice(k, 1);
             k--;
           } else if(isNaN(link[k])){ 
@@ -26,5 +26,14 @@ function valuation(){
     redirect();
 }
 
+function enterClick(event){
+    if(event.keyCode==13) valuation();
+    else return;
+}
+
+
 const button=document.querySelector('button');
 button.addEventListener('click', valuation);
+
+const input = document.querySelector('.phone_number');
+input.addEventListener('keydown', enterClick);
