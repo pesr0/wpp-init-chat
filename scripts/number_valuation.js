@@ -8,6 +8,11 @@ function valuation(){
     return;
   }
 
+  let acessCt = localStorage.getItem('ctCode');
+  if(ddi == '' && acessCt == 'BR' && true){
+    ddi=['+', '5', '5'];    
+  }
+
   link = ddi.concat(link);
 
   let i=0;
@@ -25,10 +30,9 @@ function valuation(){
   }
     
   link=link.join('');
+
   localStorage.setItem('wppPhone', link);
   
-  console.log(link);
-
   redirect();
 }
 
