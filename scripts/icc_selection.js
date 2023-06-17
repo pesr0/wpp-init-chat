@@ -1,6 +1,3 @@
-const items = document.querySelectorAll('li');
-const drop_input = document.querySelector('.dropdown_input');
-
 function icc_select(event){
     let drop_text = event.target.textContent.split('');
 

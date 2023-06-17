@@ -8,11 +8,6 @@ function valuation(){
     return;
   }
 
-  let acessCt = localStorage.getItem('ctCode');
-  if(ddi == '' && acessCt == 'BR' && true){
-    ddi=['+', '5', '5'];    
-  }
-
   link = ddi.concat(link);
 
   let i=0;
