@@ -8,8 +8,10 @@ function validation(){
     return;
   }
 
+  //unite ddi and phone number
   link = ddi.concat(link);
 
+  //clear phone number
   let i=0;
   for(let k=0; k<link.length; k++){
     if(k==0 && link[k]=='+'){
@@ -24,10 +26,12 @@ function validation(){
     }
   }
     
+  //transforme array into string
   link=link.join('');
 
   localStorage.setItem('wppPhone', link);
   
+  //calls redirect function
   redirect();
 }
 

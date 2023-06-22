@@ -4,12 +4,10 @@ function for_sara_switch(){
 
     if(sara_id == 'true'){
         localStorage.setItem('sara', 'false');
-        drop_input.style.display='';
     }
     else
     {
         localStorage.setItem('sara', 'true');
-        drop_input.style.display='none';
     }
 
 
