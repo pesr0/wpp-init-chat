@@ -36,6 +36,6 @@ function enterClick(event){
   else return;
 }
 
-button.addEventListener('click', validation);
+button_validation.addEventListener('click', validation);
 
 input_phone.addEventListener('keydown', enterClick);
