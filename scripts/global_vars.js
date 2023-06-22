@@ -1,4 +1,4 @@
-//keep all global vars
+//stores all global vars
 const button_validation=document.querySelector('button');
 const input_phone = document.querySelector('.phone_number');
 const drop_input = document.querySelector('.dropdown_input');
