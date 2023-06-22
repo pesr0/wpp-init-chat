@@ -23,6 +23,7 @@ function icc_select(event){
     }
     
     drop_input.value = drop_text;
+    localStorage.setItem('drop_text', drop_text);
 }
 
 items.forEach(function(item){

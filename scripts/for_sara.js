@@ -22,7 +22,7 @@ function for_sara_display(){
     else
     {
         drop_input.style.color='blue';
-        drop_input.value='+55';
+        drop_input.value=localStorage.getItem('drop_text');
     }
 }
 
