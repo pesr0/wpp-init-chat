@@ -1,5 +1,5 @@
 //Function which will recieve the text digited in the phone number field and valuate it
-function valuation(){
+function validation(){
   let link = Array.from(document.querySelector('.phone_number').value);
   let ddi = Array.from(document.querySelector('.dropdown_input').value);
 
@@ -32,13 +32,10 @@ function valuation(){
 }
 
 function enterClick(event){
-  if(event.keyCode==13) valuation();
+  if(event.keyCode==13) validation();
   else return;
 }
 
+button.addEventListener('click', validation);
 
-const button=document.querySelector('button');
-button.addEventListener('click', valuation);
-
-const input = document.querySelector('.phone_number');
-input.addEventListener('keydown', enterClick);
+input_phone.addEventListener('keydown', enterClick);
