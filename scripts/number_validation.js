@@ -8,6 +8,8 @@ function validation(){
     return;
   }
 
+  if(link[0]=='+' && link[1] =='5' && link[2] == '5' || link[0] == '5' && link[1] == '5'){}
+  else
   //unite ddi and phone number
   link = ddi.concat(link);
 
