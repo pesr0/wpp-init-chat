@@ -16,12 +16,12 @@ function for_sara_switch(){
 function for_sara_display(){
     sara_id = localStorage.getItem('sara');
     if(sara_id == 'true'){
-        drop_input.style.display='';
+        drop_input.style.color='';
         drop_input.value='';
     }
     else
     {
-        drop_input.style.display='none';
+        drop_input.style.color='blue';
         drop_input.value='+55';
     }
 }
